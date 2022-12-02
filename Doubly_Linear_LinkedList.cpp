@@ -66,8 +66,12 @@ Return Value:BOOL
 BOOL Doubly_Linked_List:: InsertFirst(int no)
 {
    PNODE newn=NULL;
-
    newn=new NODE;
+    
+    if(newn==NULL)
+    {
+        return FALSE;
+    }
    newn->data=no;
    newn->next=NULL;
    newn->prev=NULL;
@@ -94,8 +98,12 @@ Return Value:BOOL
 BOOL Doubly_Linked_List:: InsertLast(int no)
 {
    PNODE newn=NULL;
-
    newn=new NODE;
+    
+    if(newn==NULL)
+    {
+        return FALSE;
+    }
    newn->data=no;
    newn->next=NULL;
    newn->prev=NULL;
@@ -200,6 +208,11 @@ BOOL Doubly_Linked_List::InsertAtPos(int ipos,int no)
  {
     PNODE newn=NULL;
     newn=new NODE;
+     
+     if(newn==NULL)
+     {
+         return FALSE;
+     }
     PNODE temp=Head;
    
     newn->data=no;
