@@ -305,8 +305,8 @@ int Singly_linkedList::Count()
 
 int main()
 {
-    Singly_linkedList obj1;
-    Singly_linkedList *obj2=new Singly_linkedList();
+    Singly_linkedList obj1;   //Static object creation
+    Singly_linkedList *obj2=new Singly_linkedList();   //Dynamic Object Creation
     
     
     obj1.InsertFirst(51);
